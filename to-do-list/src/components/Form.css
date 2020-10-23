@@ -1,0 +1,9 @@
+.todo-form {
+    flex-direction: row;
+}
+
+.filter-todo{
+    margin-left: 10px;
+}
+
+
