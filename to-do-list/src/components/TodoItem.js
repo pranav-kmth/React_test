@@ -7,10 +7,23 @@ const TodoItem =({setTodos ,todo,todos,todotext}) => {
         console.log(todo);
     };
 
+    const removeHandler = (e) => {
+        if(todo.completed === false)
+        {
+            todo.completed = true ;
+        }
+        else if(todo.completed === true)
+        {
+            todo.completed = false ;
+        }
+        console.log(todo);
+        console.log(todos);
+    }
+
     return (
         <div className = "todo">
             <li className="todo-item">{todotext}</li>
-            <button className ="complete-btn"> 
+            <button className ="complete-btn" onClick = {removeHandler}> 
                 +
             </button>
             <button className= "trash-btn" onClick = {deleteHandler}> 

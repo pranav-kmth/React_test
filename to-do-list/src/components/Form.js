@@ -1,7 +1,7 @@
 import React from 'react';
 import './Form.css';
 
-const Form  = ({setInput , todos , setTodos , inputText}) => {
+const Form  = ({setInput , todos , setTodos , inputText , setStatus}) => {
     
     const inputHandler = (event) => {
         console.log(event.target.value);
@@ -16,8 +16,11 @@ const Form  = ({setInput , todos , setTodos , inputText}) => {
             [...todos , {text : inputText , completed : false , id : Math.floor(Math.random()*10000 +1)}]
         );
         setInput("");
-
     }
+    const submitHandler = (event) => {
+        setStatus(event.target.value);
+    }
+
     return (
         <div className = "todo-form"> 
             <form >
@@ -30,7 +33,7 @@ const Form  = ({setInput , todos , setTodos , inputText}) => {
                     Add
                 </button>
                 
-                <select name = "todos" className = "filter-todo">
+                <select name = "todos" className = "filter-todo" onChange= {submitHandler}>
                     <option value = "all">
                         All
                     </option>
