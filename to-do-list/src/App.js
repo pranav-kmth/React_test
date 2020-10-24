@@ -17,12 +17,7 @@ function App() {
 
   const filterHandler = () => {
     switch(status){
-      case 'all':
-        console.log("all in swicth statement");
-        setFiltered(
-          todos
-        )
-        break;
+      
       case "completed":
         console.log("completed in swicth statement");
         setFiltered(
@@ -35,6 +30,12 @@ function App() {
           todos.filter(todo => todo.completed === false)
         )
         break;
+      default:
+          console.log("all in swicth statement");
+          setFiltered(
+            todos
+          )
+          break;
     }
   }
   return (
