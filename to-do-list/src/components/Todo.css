@@ -11,24 +11,27 @@
 
 .todo-item{
     min-width: 60%;
+    float: left;
 }
 
-.todo-item-s{
+.strike , .todo-itemstrike{
     min-width: 60%;
+    float: left;
     text-decoration: line-through ;
+    opacity: 0.5;
 }
 .complete-btn{
     float: right;
-    border-color: #5be7c4;
-    color: black;
-    border-radius: 25%;
+    color: #5be7c4;
+    
+    
     margin-right: 5px ;
 }
 .trash-btn{
     float: right;
-    border-color: #ff304f;
-    color: black;
-    border-radius: 25%;
+    color: #ff304f;
+    
+    
 }
 
 

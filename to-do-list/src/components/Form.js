@@ -11,11 +11,11 @@ const Form  = ({setInput , todos , setTodos , inputText , setStatus}) => {
     const submitValue = (event) => {
         event.preventDefault();
         console.log("submitting");
-        console.log(inputText);
+        if(inputText!==""){
         setTodos(
             [...todos , {text : inputText , completed : false , id : Math.floor(Math.random()*10000 +1)}]
         );
-        setInput("");
+        setInput("");}
     }
     const submitHandler = (event) => {
         setStatus(event.target.value);

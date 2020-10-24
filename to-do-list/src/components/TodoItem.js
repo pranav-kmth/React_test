@@ -26,7 +26,7 @@ const TodoItem =({setTodos ,todo,todos,todotext}) => {
 
     return (
         <div className = "todo">
-            <span className={`todo-item${todo.completed ? '-s':''}`}>{todotext}</span>
+            <span className={`todo-item ${todo.completed ? "strike":""}`}>{todotext}</span>
             
             <button className= "trash-btn" onClick = {deleteHandler}> 
                 <FontAwesomeIcon  icon = {faTrashAlt}/>
