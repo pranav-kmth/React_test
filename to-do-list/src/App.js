@@ -39,10 +39,20 @@ function App() {
   }
   return (
     <div className="App">
-      <h1>Todo List </h1>
-      <Form todos = {todos} setTodos = {setTodos} setInput = {setInput} inputText = {inputText} setStatus={setStatus}/>
-      <Todo todos = {filtered} setTodos = {setTodos} />
-      {inputText}
+      <h1 className = "App-header">Todo List </h1>
+      <Form 
+        todos = {todos} 
+        setTodos = {setTodos} 
+        setInput = {setInput} 
+        inputText = {inputText} 
+        setStatus={setStatus}
+        className = "App-form"
+        />
+      <Todo 
+        todos = {filtered} 
+        setTodos = {setTodos} 
+      />
+      
     </div>
   );
 }

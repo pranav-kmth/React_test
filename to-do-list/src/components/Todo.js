@@ -4,9 +4,10 @@ import TodoItem from './TodoItem';
 
 
 const Todo = ({todos , setTodos}) => {
+
     return ( 
         <div className = "todo-container">
-            <ul className="todo-list">
+            
                 {todos.map( (todo)=> (
                     <TodoItem 
                     todotext = {todo.text} 
@@ -16,7 +17,7 @@ const Todo = ({todos , setTodos}) => {
                     todo = {todo}
                     />
                 ))}
-            </ul>
+            
             
 
         </div>

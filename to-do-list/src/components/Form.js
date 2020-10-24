@@ -28,12 +28,21 @@ const Form  = ({setInput , todos , setTodos , inputText , setStatus}) => {
                 value = {inputText}
                 onChange = {inputHandler} 
                 type = "text" 
+                placeholder = "Enter the task"
                 className = "todo-input"/>
-                <button onClick = {submitValue} className = "todo-button" type="submit">  
+                <button 
+                    onClick = {submitValue} 
+                    className = "todo-button" 
+                    type="submit"
+                >  
                     Add
                 </button>
                 
-                <select name = "todos" className = "filter-todo" onChange= {submitHandler}>
+                <select 
+                    name = "todos" 
+                    className = "filter-todo" 
+                    onChange= {submitHandler}
+                >
                     <option value = "all">
                         All
                     </option>

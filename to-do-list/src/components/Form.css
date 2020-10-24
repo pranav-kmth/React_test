@@ -1,9 +1,34 @@
 .todo-form {
     flex-direction: row;
+    margin: 15px;
+
 }
 
 .filter-todo{
     margin-left: 10px;
 }
 
+.todo-input{
+    background-color: aliceblue;
+    height: 30px;
+    border-style: double;
+    
+}
+.todo-button{
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 30px;
+    border-style: double;
 
+}
+.todo-button:hover {
+    background-color: #2d6cdf;
+    color: #ffffff;
+
+}
+
+.filter-todo{
+    height: 30px;
+    min-width: 120px;
+    border-style: double;
+}
